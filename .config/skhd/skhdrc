@@ -16,6 +16,10 @@ shift + alt - l : yabai -m window --swap east
 # maximize a window
 shift + alt - m : yabai -m window --toggle zoom-fullscreen
 
+# move window to other displays
+shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
+shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
+
 # send window to specific space and follow focus
 shift + alt - 1 : yabai -m window --space 1 --focus
 shift + alt - 2 : yabai -m window --space 2 --focus
@@ -23,4 +27,3 @@ shift + alt - 3 : yabai -m window --space 3 --focus
 shift + alt - 4 : yabai -m window --space 4 --focus
 shift + alt - 5 : yabai -m window --space 5 --focus
 shift + alt - 6 : yabai -m window --space 6 --focus
- 
