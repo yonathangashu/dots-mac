@@ -18,14 +18,15 @@ sketchybar --bar position=top height=30 blur_radius=30 color=0x40000000
 # We now change some default values, which are applied to all further items.
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
+# old brown: 0xff876d51
 
 default=(
   padding_left=3
   padding_right=3
   icon.font="Hack Nerd Font:Bold:14.0"
   label.font="Hack Nerd Font:Bold:13.0"
-  icon.color=0xff876d51
-  label.color=0xff876d51
+  icon.color=0xffc49fa3
+  label.color=0xffc49fa3
   icon.padding_left=3
   icon.padding_right=3
   label.padding_left=1
