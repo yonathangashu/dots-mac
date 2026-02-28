@@ -4,8 +4,9 @@
 # the space invoking this script (with name: $NAME) is currently selected:
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 
-FOCUSED_COLOR=0xffc49fa3
-UNFOCUSED_COLOR=0xff9a7e80
+FOCUSED_COLOR=0xbfe64466
+UNFOCUSED_COLOR=0xbfba3853
+
 SPACE_ICONS=("◉" "◉" "◉" "◉" "◉")
 
 SPACE_CLICK_SCRIPT="yabai -m space --focus $SID 2>/dev/null"
