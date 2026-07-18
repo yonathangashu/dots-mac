@@ -21,5 +21,6 @@ ln -sf "$(pwd)/.config/raycast" ~/.config/raycast
 ln -sf "$(pwd)/.config/skhd" ~/.config/skhd
 ln -sf "$(pwd)/.config/yabai" ~/.config/yabai
 ln -sf "$(pwd)/.config/sketchybar" ~/.config/sketchybar
+cp -r oh-my-zsh/custom/themes/powerlevel10k ~/
 
 echo "Setup complete! Restart your shell."
