@@ -25,9 +25,9 @@ default=(
   padding_right=3
   icon.font="Hack Nerd Font:Bold:14.0"
   label.font="Hack Nerd Font:Bold:13.0"
-  icon.color=0xbfA9CD5F
-# e64466
-  label.color=0xbfA9CD5F
+  icon.color=0xbfA9CE1F
+  # e64466
+  label.color=0xbfA9CE1F
 # e64466
   icon.padding_left=3
   icon.padding_right=3

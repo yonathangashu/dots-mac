@@ -4,9 +4,9 @@
 # the space invoking this script (with name: $NAME) is currently selected:
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 
-FOCUSED_COLOR=0xbfA9CD5F
+FOCUSED_COLOR=0xbfA9CE1F
 # e64466
-UNFOCUSED_COLOR=0xbf7C9844
+UNFOCUSED_COLOR=0xbf7C9E44
 # ba3853
 
 SPACE_ICONS=("◉" "◉" "◉" "◉" "◉")
