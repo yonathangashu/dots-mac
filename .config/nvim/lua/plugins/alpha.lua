@@ -8,16 +8,10 @@ return {
     local alpha = require 'alpha'
     local dashboard = require 'alpha.themes.startify'
 
-    dashboard.section.header.val = {
-      [[                                                    ]],
-      [[ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ]],
-      [[ ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ]],
-      [[ ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ]],
-      [[ ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ]],
-      [[ ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ]],
-      [[ ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ]],
-      [[                                                    ]],
-    }
+    dashboard.section.header.opts.position = 'center'
+    for _, btn in ipairs(dashboard.section.top_buttons.val) do
+      btn.opts.position = 'center'
+    end
 
     alpha.setup(dashboard.opts)
   end,
