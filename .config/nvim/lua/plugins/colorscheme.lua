@@ -1,12 +1,25 @@
+-- Material Theme Palenight (lighter variant of the VS Code Material Theme)
 return {
-    "ellisonleao/gruvbox.nvim",
+    "marko-cerovac/material.nvim",
     lazy = false,
-    priority = 1000 , 
+    priority = 1000,
     config = function()
-    require('gruvbox').setup({
-        transparent_mode = true
-    })
-	vim.cmd("colorscheme gruvbox")
-	vim.o.background = "dark" -- or "light" for light mode
-    end
+        vim.g.material_style = "palenight"
+        require("material").setup({
+            disable = {
+                background = true, -- transparent, like your old gruvbox setup (kitty bg matches anyway)
+            },
+            plugins = {
+                "gitsigns",
+                "indent-blankline",
+                "neo-tree",
+                "nvim-cmp",
+                "nvim-web-devicons",
+                "telescope",
+            },
+            lualine_style = "default",
+        })
+        vim.o.background = "dark"
+        vim.cmd("colorscheme material")
+    end,
 }

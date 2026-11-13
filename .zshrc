@@ -56,4 +56,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="/usr/local/opt/binutils/bin:$PATH"
+export PNPM_HOME="/Users/ygashu/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 eval "$(zoxide init zsh)"

@@ -41,20 +41,28 @@ return {
         maximum_length = 15,
         sort_by = 'insert_at_end',
       },
-      highlights = {
-        separator = {
-          fg = '#434C5E',
-        },
-        buffer_selected = {
-          bold = true,
-          italic = false,
-        },
-        -- separator_selected = {},
-        -- tab_selected = {},
-        -- background = {},
-        -- indicator_selected = {},
-        -- fill = {},
-      },
+      -- The editor body is transparent, so bufferline can't derive a darker bar by itself.
+      -- Paint the bar + unselected tabs a darker Palenight shade; the selected tab has
+      -- no bg so it blends into the body.
+      highlights = (function()
+        local bar = '#1E2130'
+        local hl = {
+          fill = { bg = bar },
+          separator = { fg = '#3A3F58', bg = bar },
+          separator_visible = { fg = '#3A3F58', bg = bar },
+          separator_selected = { fg = '#3A3F58' },
+          buffer_selected = { bold = true, italic = false },
+        }
+        for _, g in ipairs({
+          'background', 'buffer_visible', 'close_button', 'close_button_visible',
+          'modified', 'modified_visible', 'duplicate', 'duplicate_visible',
+          'tab', 'tab_close', 'trunc_marker', 'pick', 'pick_visible',
+          'numbers', 'numbers_visible', 'indicator_visible',
+        }) do
+          hl[g] = { bg = bar }
+        end
+        return hl
+      end)(),
     }
   end,
 }
